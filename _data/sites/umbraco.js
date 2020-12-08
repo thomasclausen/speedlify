@@ -1,6 +1,7 @@
 module.exports = {
   name: "Umbraco", // optional, falls back to object key
   description: "Statistics for Umbraco sites developed at gotcha",
+  skip: !process.env.CONTEXT || process.env.SITE_NAME !== "speedlify",
   options: {
     frequency: 60 * 23, // (in minutes), 23 hours
     freshChrome: "run"
