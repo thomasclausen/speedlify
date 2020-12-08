@@ -300,13 +300,6 @@ module.exports = function(eleventyConfig) {
 
 	eleventyConfig.addFilter("calc", calc);
 
-	eleventyConfig.addPairedShortcode("starterMessage", (htmlContent) => {
-		if(process.env.SITE_NAME !== "speedlify") {
-			return htmlContent;
-		}
-		return "";
-	});
-
 	// Assets
 	eleventyConfig.addPassthroughCopy({
 		"./node_modules/chartist/dist/chartist.js": "chartist.js",
