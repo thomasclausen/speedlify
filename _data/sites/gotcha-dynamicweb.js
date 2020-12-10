@@ -1,7 +1,6 @@
 module.exports = {
-  name: "Dynamicweb", // optional, falls back to object key
+  name: "Gotcha - Dynamicweb", // optional, falls back to object key
   description: "Statistics for Dynamicweb sites developed at gotcha",
-  skip: !process.env.CONTEXT || process.env.SITE_NAME !== "speedlify",
   options: {
     frequency: 60 * 23, // (in minutes), 23 hours
     freshChrome: "run"
